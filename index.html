@@ -1,1 +1,216 @@
-<h1>Test</h1>
+<head>
+<style>
+body {
+  font-family: calibri;
+  background-image: url("https://media.istockphoto.com/id/1030371872/photo/night-starry-sky-background.webp?b=1&s=170667a&w=0&k=20&c=_lgbCitBvvK2SxVnv6HLLXF0A5fmMRnYu6bwWqg58Y4=");
+
+  color: lightgrey;
+  text-align: center;
+}
+
+#PlanetTextContainer {
+  height: 300px;
+  max-height: 300px;
+}
+
+.planetlabel {
+  visibility: hidden;
+}
+
+.Planet {
+  display: inline-block;
+  height: 300px;
+  max-height: 300px;
+}
+.PlanetImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 300px;
+}
+.PlanetText {
+  display: none;
+}
+
+.BigPlanetText {
+  display: block !important;
+}
+
+#TheSun > div > img {
+  width: 250px;
+}
+
+#Mercury > div > img {
+  width: 30px;
+}
+
+#Venus > div > img {
+  width: 50px;
+}
+
+#Earth > div > img {
+  width: 80px;
+}
+
+#Mars > div > img {
+  width: 60px;
+}
+
+#Jupiter > div > img {
+  width: 120px;
+}
+
+#Saturn > div > img {
+  width: 150px;
+}
+
+#Uranus > div > img {
+  width: 90px;
+}
+
+#Neptune > div > img {
+  width: 90px;
+}
+
+.BigPlanet {
+  width: 300px !important;
+}
+</style>
+</head>
+<body>
+<h1>My Solar System Homework</h1>
+<div id="TheSun" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="TheSunImage" src="https://www.solarsystemscope.com/spacepedia/images/handbook/renders/sun.png"></img></div>
+  <div class="planetlabel">The Sun</div>
+</div>
+
+<div id="Mercury" onClick="MakePlanetBig(this.id);" class="Planet">
+  <div class="PlanetImage"><img id="MercuryImage" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Mercury.png"></img></div>
+  <div class="planetlabel">Mercury</div>
+</div>
+
+<div id="Venus" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="VenusImage" src="https://upload.wikimedia.org/wikipedia/commons/9/93/Venus_globe_-_transparent_background.png"></img></div>
+  <div class="planetlabel">Venus</div>
+</div>
+
+<div id="Earth" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="EarthImage" src="https://upload.wikimedia.org/wikipedia/commons/4/43/The_Earth_seen_from_Apollo_17_with_transparent_background.png"></img></div>
+  <div class="planetlabel">Earth</div>
+</div>
+
+<div id="Mars" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="MarsImage" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Mars_%2816716283421%29_-_Transparent_background.png"></img></div>
+  <div class="planetlabel">Mars</div>
+</div>
+
+<div id="Jupiter" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="JupiterImage" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png"></img></div>
+  <div class="planetlabel">Jupiter</div>
+</div>
+
+<div id="Saturn" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="SaturnImage" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Saturnx.png"></img></div>
+  <div class="planetlabel">Saturn</div>
+</div>
+
+<div id="Uranus" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="UranusImage" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Transparent_Uranus.png"></img></div>
+  <div class="planetlabel">Uranus</div>
+</div>
+
+<div id="Neptune" class="Planet" onClick="MakePlanetBig(this.id);">
+  <div class="PlanetImage"><img id="NeptuneImage" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Neptune_cutout.png"></img></div>
+  <div class="planetlabel">Neptune</div>
+</div>
+
+<div id="PlanetTextContainer">
+  <div id="TheSunText" class="PlanetText">
+    How to make a star
+    <ul>
+
+      <li>Star was created by dust and gas, stellar nursery or nebular</li>
+      <li>The gravity becomes together</li>
+      <li>More matter, the mass at the centre attracted more matter towards it. It grew the
+        pressures and temperatures inside it increased until the particles began to fuse together</li>
+      <li>Spinning is matter spinning fast and flattens into a disc shape</li>
+      <li>In the middle of the spinning disc a protostar or a baby star begins to form</li>
+      <li>Fusion - Gravity pulls more matter to the protostar and pressures and temperatures rose
+        high enough to cause a process called fusion</li>
+    </ul>
+  </div>
+
+  <div id="MercuryText" class="PlanetText">
+    <ul>
+      <li>Mercury is the smallest planet in our solar system</li>
+      <li>Although Mercury has a short orbit, it takes a very long time for the planet to rotate once on its axis.</li>
+      <li>Mercury has a short orbit compared to earth and it only takes 87.7 earth days to orbit the sun, and rounded up it takes 88 earth days.</li>
+    </ul>
+  </div>
+
+  <div id="VenusText" class="PlanetText">
+    <ul>
+      <li>Venus is the acid planet</li>
+      <li>Venus rotates in the opposite direction than every other planet in the solar system. Why it does this, nobody knows</li>
+      <li>Venus is the hottest planet in the solar system of around 450degrees Celsius. It is hotter than Mercury</li>
+    </ul>
+  </div>
+
+  <div id="EarthText" class="PlanetText">
+    <ul>
+      <li>We only have explored 5% of the earths ocean</li>
+      <li>The earth to home to an estimate 8.7 million species of life</li>
+      <li>Lightning strikes the earth 8.6 million times per day</li>
+      <li>Earth is one of the solid rocky inner planets of the solar system, although it feels familiar, it is incredibly special-we are not encounter like another one in our travels</li>
+    </ul>
+  </div>
+
+  <div id="MarsText" class="PlanetText">
+    <ul>
+      <li>According to NASA the first person to land on Mars is alive today</li>
+      <li>Mars is known as the Red Planet.
+      <li>Phobos are rocks on Mars and they look like a potato</li>
+      <li>Mars red colour comes from the iron oxide (rust) in its surface.</li>
+      <li>Mars has similar features to Earth, but there are aspects of it that would make it hard for humans to survive such as oxygen and more</li>
+    </ul>
+  </div>
+
+  <div id="JupiterText" class="PlanetText">
+    <ul>
+      <li>Jupiter is similar to the sun – both are made of hydrogen and helium</li>
+      <li>Jupiter spins faster than any other planet – it rotates once every ten hours and causes the planet to bulge out in the middle</li>
+      <li>The layers of Jupiter are cloud, gas, ocean and metal core</li>
+    </ul>
+  </div>
+
+  <div id="SaturnText" class="PlanetText">
+    <ul>
+      <li>Saturn is also known as The Lord of the Rings</li>
+      <li>Saturn is a long way from the sun, the pale-yellow Saturn is beautiful because the planets icy rings appear and disappear from views</li>
+      <li>Saturn’s rings system is the most amazing, although only 10m deep it is 280,000km wide</li>
+      <li>Inside the rings, you can see the rings are made of millions of objects from specs of dust to icy boulders as big as mountains. Each object is in orbit around Saturn</li>
+    </ul>
+  </div>
+
+  <div id="UranusText" class="PlanetText">
+    <ul>
+      <li>Uranus spins on its side and it has a non-visible ring.</li>
+      <li>It has 27 moons</li>
+      <li>The planet has a strong gravitational moon and may have captured nearby moons</li>
+      <li>Uranus has a slushy surface</li>
+    </ul>
+  </div>
+
+  <div id="NeptuneText" class="PlanetText">
+    <ul>
+      <li>Neptune is known as a turbulent planet</li>
+      <li>Neptune is 30au from the sun, which is thirty times the distance from earth to the sun</li>
+      <li>The tilt on Neptune’s axis is similar to Earths, so the planet also experiences seasons</li>
+      <li>Neptune is the only planet that is not visible from the open eye from Earth</li>
+      <li>Neptune is the windiest planet</li>
+    </ul>
+  </div>
+</div>
+</div>  
+</body>
