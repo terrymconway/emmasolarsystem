@@ -1,4 +1,28 @@
 <head>
+<script>
+var sBigPlanetId = "";
+document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+
+function MakePlanetBig(PlanetId) {
+  console.log(sBigPlanetId);
+
+  if (sBigPlanetId != PlanetId && sBigPlanetId != "") {
+    document
+      .getElementById(sBigPlanetId + "Image")
+      .classList.remove("BigPlanet");
+
+    document
+      .getElementById(sBigPlanetId + "Text")
+      .classList.remove("BigPlanetText");
+  }
+
+  document.getElementById(PlanetId + "Image").classList.toggle("BigPlanet");
+
+  document.getElementById(PlanetId + "Text").classList.toggle("BigPlanetText");
+  sBigPlanetId = PlanetId;
+}
+  
+</script>  
 <style>
 body {
   font-family: calibri;
